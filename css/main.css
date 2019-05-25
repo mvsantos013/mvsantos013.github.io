@@ -166,6 +166,10 @@ div.col-sm-3 img.profile-avatar {
   margin-bottom: 20px;
 }
 
+.padded-left{
+  padding-left: 40px;
+}
+
 /* Responsive Conditional */
 @media (min-width: 1024px) {
   .fixed-condition {
