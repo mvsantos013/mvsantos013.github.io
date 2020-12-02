@@ -34,21 +34,23 @@
                             <li><a href="https://github.com/mvsantos013" target="_blank"><i class="fa fa-github"></i></a></li>
                         </ul>
                     </div>
-                    <hr />
+                    <!--<hr />
                     <ul class="sidebar-nav">
                         <strong>Mais detalhes</strong>
                         <li><a href="/">Página inicial</a></li>
                         <li><a class="about" href="experiencia.html">Experiência</a></li>
                         <li><a class="about" href="projetos_individuais.html">Projetos individuais</a></li>
                         <li><a class="about" href="outras_atividades.html">Outras atividades</a></li>
-                    </ul>
+                    </ul>-->
                 </div>
             </div>
             
             <div class="col-sm-8 col-offset-1 main-layout">
                 <div id="home">
-                    <h1>Informações sobre mim</h1>
-                    <!--<p>Acesse o menu lateral para ler mais detalhes de cada seção.</p>-->
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem">
+                        <div><h1 style="margin-top: 0">Informações sobre mim</h1></div>
+                        <div><small>Atualizado em 02/12/2020</small></div>
+                    </div>
                     <hr />
                     <section id="formacao_academica">
                         <h4>Formação acadêmica</h4>
@@ -63,10 +65,12 @@
                         <h4>Experiência</h4>
                         <p>
                             <ul class="no-bullets">
-                                <li>Web Development (Intermediária-Avançada) - Laravel, Vue.js, PHP, SQL, Javascript, HTML5, CSS5.</li>
-                                <li>2D Mobile games (Básica-Intermediária) - LibGDX, Java.</li>
-                                <li>Blockchain (Básica-Intermediária) - IOTA Tangle.</li>
-                                <li>Data Science (Básica) - Python.</li>
+                                <li>AWS (intermediário-avançado) - IAM, S3, Lambda, Step Functions, EC2, Amplify, Sagemaker, Glue, Athena. </li>
+                                <li>Web Development (avançado) - AWS Amplify, Vue, React, NodeJS, Typescript, Laravel, PHP, SQL, SASS, Tailwind.</li>
+                                <li>Data Engineering (intermediária) - Datalake e ETLs com AWS Lambda, S3, Glue, Athena.</li>
+                                <li>Data Science (intermediária) - Python.</li>
+                                <li>Blockchain (intermediária) - IOTA.</li>
+                                <li>2D Mobile games (básico-intermediário) - LibGDX, Java.</li>
                             </ul>
                         </p>
                     </section>
@@ -75,14 +79,13 @@
                         <h4>Atividades</h4>
                         <p>
                             <ul class="no-bullets">
-                            	<li>Desenvolvedor de Software na empresa Wikki Brasil, Desktop Development. <span class="small text-muted">Atualmente</span></li>
-                                <li>Estágio no STI POLI UFRJ, análise de dados e automatização de tarefas, UFRJ. <span class="small text-muted">2019</span></li>
+                            	<li>Estagiário em Engenharia de Software na Hashdex <span class="small text-muted">2020.1 - Atualmente</span></li>
+                            	<li>Desenvolvedor de Software na empresa Wikki Brasil, Desktop Development. <span class="small text-muted">2019.2</span></li>
+                                <li>Estagiário no STI POLI UFRJ, análise de dados e automatização de tarefas, UFRJ. <span class="small text-muted">2019</span></li>
                                 <li>Freelancer na Startup Ágil TI, desenvolvimento Web MVP com Laravel e Vue.js. <span class="small text-muted">2019.1</span></li>
                                 <li>Membro voluntário da equipe de competição Minerva Aerodesign, UFRJ. <span class="small text-muted">2018.1 - 2018.2</span></li>
                                 <li>Iniciação Científica, análise da dinâmica orbital de sistemas extrasolares, UFRJ. <span class="small text-muted">2016 - 2018</span></li>
-                                <li>Monitoria de Introdução à Física, UFRJ. <span class="small text-muted">2015.1</span></li>
-                                
-                                
+                                <li>Monitoria de Introdução à Física, UFRJ. <span class="small text-muted">2015.1</span></li>  
                             </ul>
                         </p>
                     </section>
@@ -91,17 +94,12 @@
                         <h4>Projetos individuais</h4>
                         <p>
                             <ul class="no-bullets">
-                                <li>Desenvolvimento de uma aplicação em Python que procura expressões em PDFs online. <span class="small text-muted">2019</span></li>
+                                <li>Aplicação WEB para monitoramento e identificação de padrões em criptoativos. <span class="small text-muted">2020</span></li>
                                 <li>Aplicação da tecnologia Tangle (similar à Blockchain) para transferência de informação e pagamentos. <span class="small text-muted">2018</span></li>
                                 <li>Criação de site (loja virtual, frontend e backend).  <span class="small text-muted">2018</span></li>
                                 <li>Criação de site sobre criptomoedas (frontend: HTML5, CSS5, Javascript e backend: PHP, Mysql). <span class="small text-muted">2018</span></li>
                                 <li>Desenvolvimento do sistema que direciona um painel solar para fonte de luz com Arduino. <span class="small text-muted">2017</span></li>
                                 <li>Desenvolvimento de dois jogos para plataforma android (Java/LibGDX). <span class="small text-muted">2016</span></li>
-                                
-                                
-                                
-                                
-
                             </ul>
                         </p>
                     </section>
@@ -110,9 +108,15 @@
                         <h4>Cursos</h4>
                         <p>
                             <ul class="no-bullets">
-                                <li>Curso completo de Desenvolvimento Web (34,5h), Udemy. <span class="small text-muted">2018</span></li>
+                                <li>Building Scalable APIs with the AWS API Gateway (1h55m), Pluralsight. <span class="small text-muted">2020</span></li>
+                                <li>Docker for Web Developers (5h38m), Pluralsight. <span class="small text-muted">2020</span></li>
+                                <li>Using the Serverless Framework with Node.js on AWS (1h38m), Pluralsight. <span class="small text-muted">2020</span></li>
+                                <li>AWS Serverless Computing: The Big Picture (1h), Pluralsight. <span class="small text-muted">2020</span></li>
+                                <li>AWS Developer: An Introduction to AWS Lambda (4h), Pluralsight. <span class="small text-muted">2020</span></li>
+                                <li>Curso React.js Ninja - React Completo (91h), Udemy. <span class="small text-muted">2019</span></li>
+                                <li>Curso completo de Desenvolvimento Web (34h30m), Udemy. <span class="small text-muted">2018</span></li>
                                 <li>Git Started with Github (1h), Udemy. <span class="small text-muted">2018</span></li>
-                                <li>Machine Learning e Data Science com Python (16,5h), Udemy. <span class="small text-muted">2017</span></li>
+                                <li>Machine Learning e Data Science com Python (16h30m), Udemy. <span class="small text-muted">2017</span></li>
                                 <li>Android Start (8h), Softblue. <span class="small text-muted">2017</span></li>
                                 <li>SQL Completo (20h), Softblue. <span class="small text-muted">2017</span></li>
                                 <li>Java Academy 2016 Pocket Edition (4h), Softblue. <span class="small text-muted">2016</span></li>
