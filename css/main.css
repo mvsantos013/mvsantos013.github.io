@@ -1,7 +1,6 @@
 body {
   font-family: "Roboto Condensed", Arial, sans-serif;
   background: url("/img/subtle_dots.png");
-  line-height: 1.5em;
   font-weight: 300;
   font-size: 16px;
   color: #666;
@@ -160,6 +159,17 @@ div.col-sm-3 img.profile-avatar {
 
 .no-bullets{
   list-style: none;
+}
+
+.no-bullets li{
+  line-height: 20px;
+  margin-bottom: 0.4rem;
+}
+
+@media(max-width: 600px){
+  .no-bullets li{
+    margin-bottom: 0.9rem;
+  }
 }
 
 #home section{
