@@ -163,12 +163,12 @@ div.col-sm-3 img.profile-avatar {
 
 .no-bullets li{
   line-height: 20px;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.3rem;
 }
 
 @media(max-width: 600px){
   .no-bullets li{
-    margin-bottom: 0.9rem;
+    margin-bottom: 0.8rem;
   }
 }
 
