@@ -166,6 +166,10 @@ div.col-sm-3 img.profile-avatar {
   margin-bottom: 0.3rem;
 }
 
+.no-bullets.mb li{
+  margin-bottom: 0.7rem;
+}
+
 @media(max-width: 600px){
   .no-bullets li{
     margin-bottom: 0.8rem;
@@ -191,4 +195,39 @@ div.col-sm-3 img.profile-avatar {
   div.col-sm-3 {
     margin-top: 30px;
   }
+}
+
+.collapsible {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  background-color: white;
+  padding-left: 0;
+}
+
+.collap-active, .collapsible:hover {
+  color: #000;
+  transition: color 0.3s;
+}
+
+.collapsible:before {
+  content: '\002B';
+  font-weight: bold;
+  float: left;
+  margin-right: 7px;
+  color: #808080;
+}
+
+.collap-active:before {
+  content: "\2212";
+  color: #808080;
+}
+
+.collap-content {
+  padding: 2px 18px 0px 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }

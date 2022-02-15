@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+    <!-- Im not the template owner, I also don't know who's the owner. -->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -49,7 +49,7 @@
                 <div id="home">
                     <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem">
                         <div><h1 style="margin-top: 0">Informações sobre mim</h1></div>
-                        <div><small>Atualizado em 01/08/2021</small></div>
+                        <div><small>Atualizado em 14/02/2022</small></div>
                     </div>
                     <hr />
                     <section id="formacao_academica">
@@ -64,13 +64,12 @@
                     <section id="experiencia">
                         <h4>Experiência</h4>
                         <p>
-                            <ul class="no-bullets">
-                                <li>AWS - Lambda, S3, Amplify, EC2, Step Functions, IAM, ECS, Sagemaker, Glue, Athena, Serverless Framework. </li>
-                                <li>Web Development - AWS Amplify, Vue, React, NodeJS, Typescript, Laravel, PHP, SQL, SASS, Tailwind.</li>
-                                <li>Data Engineering - Datalake e ETLs com Python, AWS Lambda, S3, Glue, Athena.</li>
-                                <li>Data Science - Python.</li>
+                            <ul class="no-bullets mb">
+                                <li>AWS - Lambda, S3, Cognito, IAM, CloudFormation, Amplify, API Gateway, Step Functions, DynamoDB, Timestream, EC2, ECS, CloudWatch, CloudFront, Sagemaker, Glue, Athena, SNS, SQS, SES, Serverless Framework.</li>
+                                <li>Web Development - Vue, React, Svelte, Amplify, Cognito, NodeJS, NestJS, Flask, Laravel, API REST, GraphQL, Redis, Typescript, PHP, SQL, SASS, Tailwind, Eslint, Stylelint, Prettier, Jest.</li>
+                                <li>Data Engineering - Python (numpy, pandas, boto3), PySpark, AWS Lambda, Kinesis, SNS, SQS, S3, Glue, Athena.</li>
+                                <li>Devops - Git, CloudFormation, CI/CD (Bitbucket pipeliens, CodeBuild), Docker.</li>
                                 <li>Blockchain - IOTA.</li>
-                                <li>2D Mobile games - LibGDX, Java.</li>
                             </ul>
                         </p>
                     </section>
@@ -79,14 +78,54 @@
                         <h4>Atividades</h4>
                         <p>
                             <ul class="no-bullets">
-                            	<li>Engenheiro de Software Full-Stack Junior na Hashdex <span class="small text-muted">2021.2 - Atualmente</span></li>
-                            	<li>Estagiário em Engenharia de Software na Hashdex <span class="small text-muted">2020.1 - 2021.2</span></li>
-                            	<li>Desenvolvedor de Software na empresa Wikki Brasil, Desktop Development. <span class="small text-muted">2019.2</span></li>
-                                <li>Estagiário no STI POLI UFRJ, análise de dados e automatização de tarefas, UFRJ. <span class="small text-muted">2019</span></li>
-                                <li>Freelancer na Startup Ágil TI, desenvolvimento Web MVP com Laravel e Vue.js. <span class="small text-muted">2019.1</span></li>
-                                <li>Membro voluntário da equipe de competição Minerva Aerodesign, UFRJ. <span class="small text-muted">2018.1 - 2018.2</span></li>
-                                <li>Iniciação Científica, análise da dinâmica orbital de sistemas extrasolares, UFRJ. <span class="small text-muted">2016 - 2018</span></li>
-                                <li>Monitor de Introdução à Física, UFRJ. <span class="small text-muted">2015.1</span></li>  
+                                <li>
+                                    <button class="collapsible">Engenheiro de Software Full-Stack Junior na Hashdex <span class="small text-muted">2021.2 - Atualmente</span></button>
+                                    <div class="collap-content">
+                                        <p>
+                                            - Automações e desenvolvimento em geral. <br/>
+                                            - Desenvolvimento das primeiras versões do site principal usando Vue (NuxtJS), Tailwind, Serverless Framework e AWS Lambda. <br/>
+                                            - Criação de Datalake com Python e serviços da AWS como Glue e Athena. <br/>
+                                            - Desenvolvimento de inúmeras aplicações internas confidenciais utilizando como Stack as ferramentas descritas em "Experiência".
+                                        </p>
+                                    </div>
+                                </li>
+                            	<li>
+                                    <button class="collapsible">Estagiário em Engenharia de Software na Hashdex <span class="small text-muted">2020.1 - 2021.2</span></button>
+                                    <div class="collap-content">
+                                        <p>- Ler acima.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button class="collapsible">Desenvolvedor de Software na empresa Wikki Brasil, Desktop Development. <span class="small text-muted">2019.2</span></button>
+                                    <div class="collap-content">
+                                        <p>- Manutenção e desenvolvimento de aplicação legado confidencial da Petrobrás com de mais de 20 anos, escrita em Python. <br/>
+                                        - Desenvolvimento da UI de uma aplicação confidencial para Petrobrás utilizando React.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button class="collapsible">Estagiário no STI POLI UFRJ, análise de dados e automatização de tarefas, UFRJ. <span class="small text-muted">2019</span></button>
+                                    <div class="collap-content">
+                                        <p>- Desenvolvimento de aplicação web para controle de pagamentos de mensalidades dos cursos de pós-gradução da Escola Politécnica UFRJ utilizando Laravel, PHP e Vue.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button class="collapsible">Freelancer na Startup Ágil TI, desenvolvimento Web MVP com Laravel e Vue.js. <span class="small text-muted">2019.1</span></button>
+                                    <div class="collap-content">
+                                        <p>- Desenvolvimento de uma aplicação web de agência de viagens utilizando Laravel e Vue.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button class="collapsible">Membro da equipe de competição Minerva Aerodesign, UFRJ. <span class="small text-muted">2018.1 - 2018.2</span></button>
+                                    <div class="collap-content">
+                                        <p>- Como membro voluntário atuei auxiliando na construção de aeromodelos e na parte elétrica.</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <button class="collapsible">Iniciação Científica, análise da dinâmica orbital de sistemas extrasolares, UFRJ. <span class="small text-muted">2016 - 2018</span></button>
+                                    <div class="collap-content">
+                                        <p>- Análise da dinâmica orbital e simulações de asteroides em sistemas extrasolares Kepler a fim de estudar a possibilidade de existência de água em planetas extrasolares.</p>
+                                    </div>
+                                </li>
                             </ul>
                         </p>
                     </section>
@@ -95,7 +134,7 @@
                         <h4>Projetos individuais</h4>
                         <p>
                             <ul class="no-bullets">
-                                <li>Aplicação WEB para monitoramento e identificação de padrões em criptoativos. <span class="small text-muted">2020</span></li>
+                                <li>Aplicação web para monitoramento e identificação de padrões em criptoativos. <span class="small text-muted">2020</span></li>
                                 <li>Aplicação da tecnologia Tangle (similar à Blockchain) para transferência de informação e pagamentos. <span class="small text-muted">2018</span></li>
                                 <li>Criação de site de loja virtual (frontend e backend).  <span class="small text-muted">2018</span></li>
                                 <li>Criação de site sobre criptomoedas (frontend: HTML5, CSS5, Javascript e backend: PHP, Mysql). <span class="small text-muted">2018</span></li>
@@ -156,5 +195,22 @@
 
         <script src="/js/jquery-1.11.0.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("collap-active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                } 
+              });
+            }
+        </script>
     </body>
 </html>
