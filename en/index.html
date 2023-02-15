@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <!-- Im not the template owner, I also don't know who's the owner. -->
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="/img/favicon.png" />
-        <title>Mateus Santos</title>
         <meta name="author" content="Mateus Víctor Costa Almeida dos Santos" />
-        <meta name="description" content="About me" />
+        <meta name="description" content="Info about me" />
         <meta name="keywords" content="Mateus Víctor Costa Almeida dos Santos, Currículo Vitae" />
         <meta content="Mateus Víctor Costa Almeida dos Santos" property="og:site_name">
-
-        <link rel="stylesheet" type="text/css" href="../css/font-awesome.min.css">
-        <link rel="stylesheet" type="text/css" href="../css/syntax.css">
-        <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="../css/fonts.css">
-        <link rel="stylesheet" type="text/css" href="../css/main.css">
+        <link href="https://cdn.jsdelivr.net/npm/@mdi/font@^6.0.0/css/materialdesignicons.min.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="/imgs/favicon.png" />
+        <link rel="stylesheet" type="text/css" href="/css/fonts.css">
+        <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="/css/main.css">
+        <title>Mateus Santos</title>
     </head>
-
     <body>
         <div class="container">
-            <div class="col-sm-3">
-                <div class="fixed-condition">
-                        <a href="/"><img class="profile-avatar" src="../img/avatar2.jpg" height="100px" width="100px" /></a>
+            <div class="sidebar col-sm-3">
+                <div class="sidebar-fixed">
+                    <a href="/">
+                        <img class="profile-avatar" src="/imgs/avatar.jpg" height="100px" width="100px" />
+                    </a>
                     <h1 class="author-name">Mateus Santos</h1>
                     <div class="profile-about">
-                        Graduating Computer Science at UFRJ. Fascinated by Blockchain technology (IOTA Tangle). <br>
-                        E-mail: mvsantos013@gmail.com
+                        Computer Scientist. Fascinated by Blockchain technology (IOTA)<br/>
+                        email: mvsantos013@gmail.com
                     </div>
                     <div class="social">
                         <ul>
-                            <li><a href="https://github.com/mvsantos013" target="_blank"><i class="fa fa-github"></i></a></li>
+                            <li>
+                                <a href="https://github.com/mvsantos013" target="_blank">
+                                    <span class="mdi mdi-github"></span>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <!--<hr />
-                    <ul class="sidebar-nav">
+                    <ul class="nav">
                         <strong>Mais detalhes</strong>
                         <li><a href="/">Página inicial</a></li>
                         <li><a class="about" href="experiencia.html">Experiência</a></li>
@@ -44,165 +46,131 @@
                     </ul>-->
                 </div>
             </div>
-            
-            <div class="col-sm-8 col-offset-1 main-layout">
-                <div id="home">
-                    <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem">
-                        <div><h1 style="margin-top: 0">About Me</h1></div>
-                        <div><small>Updated at Feb/15/2022</small></div>
-                    </div>
-                    <hr />
-                    <section id="formacao_academica">
-                        <h4>Academic Background</h4>
-                        <p>
-                            <ul class="no-bullets">
-                                <li>Bachelor in Computer Science, Federal University of Rio de Janeiro (UFRJ) <span class="small text-muted">2019 - currently</span></li>
-                                <li>Bachelor of Physics, UFRJ. (6 effective periods, course switch) <span class="small text-muted">2015 - 2018</span></li>
-                            </ul>
-                        </p>
-                    </section>
-                    <section id="experiencia">
-                        <h4>Experience</h4>
-                        <p>
-                            <ul class="no-bullets mb">
-                                <li>AWS - Lambda, S3, Cognito, IAM, CloudFormation, Amplify, API Gateway, Step Functions, DynamoDB, Timestream, EC2, ECS, CloudWatch, CloudFront, Sagemaker, Glue, Athena, SNS, SQS, SES, Serverless Framework.</li>
-                                <li>Web Development - Vue, React, Svelte, Amplify, Cognito, NodeJS, NestJS, Flask, Laravel, API REST, GraphQL, Redis, Typescript, PHP, SQL, SASS, Tailwind, Eslint, Stylelint, Prettier, Jest.</li>
-                                <li>Data Engineering - Python (numpy, pandas, boto3), PySpark, AWS Lambda, Kinesis, SNS, SQS, S3, Glue, Athena.</li>
-                                <li>Devops - Git, CloudFormation, CI/CD (Bitbucket pipeliens, CodeBuild), Docker.</li>
-                                <li>Blockchain - IOTA.</li>
-                                <li>SaaS, IaC, TDD, DDD, BDD, Agile.</li>
-                            </ul>
-                        </p>
-                    </section>
+    
+            <div class="main-layout col-sm-8 col-offset-1">
+                <section class="header">
+                    <div><h1 style="margin-top: 0">About me</h1></div>
+                    <div><small>Updated at 15/02/2023</small></div>
+                </section>
 
-                    <section id="outras_atividades">
-                        <h4>Activities</h4>
-                        <p>
-                            <ul class="no-bullets">
-                                <li>
-                                    <button class="collapsible">Full-Stack Software Engineer Junior at Hashdex <span class="small text-muted">2021.2 - currently</span></button>
-                                    <div class="collap-content">
-                                        <p>
-                                            - Automations and development in general. <br/>
-                                            - Development of the first versions of the main site using Vue (NuxtJS), Tailwind, Serverless Framework and AWS Lambda. <br/>
-                                            - Development of Datalake with Python and AWS services such as Glue and Athena. <br/>
-                                            - Development of several confidential internal web based applications using the tools described in "Experience".
-                                        </p>
-                                    </div>
-                                </li>
-                            	<li>
-                                    <button class="collapsible">Software Engineer Intern at Hashdex <span class="small text-muted">2020.1 - 2021.2</span></button>
-                                    <div class="collap-content">
-                                        <p>- Same as above.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <button class="collapsible">Software Developer at Wikki Brasil, Desktop Development. <span class="small text-muted">2019.2</span></button>
-                                    <div class="collap-content">
-                                        <p>- Maintenance and development of a confidential legacy application from Petrobras with more than 20 years, written in Python. <br/>
-                                            - UI development of a confidential application for Petrobras using React.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <button class="collapsible">Internet at STI POLI UFRJ, data analysis and tasks automation, UFRJ. <span class="small text-muted">2019</span></button>
-                                    <div class="collap-content">
-                                        <p>- Development of a web application to control monthly payments for postgraduate courses at Escola Politécnica UFRJ using Laravel, PHP and Vue.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <button class="collapsible">Freelancer at Startup Ágil TI, Web development MVP with Laravel and Vue.js. <span class="small text-muted">2019.1</span></button>
-                                    <div class="collap-content">
-                                        <p>- Development of a travel agency web application using Laravel and Vue.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <button class="collapsible">Member of the Minerva Aerodesign competition team, UFRJ. <span class="small text-muted">2018.1 - 2018.2</span></button>
-                                    <div class="collap-content">
-                                        <p>- As a volunteer member I worked helping in the construction of model airplanes and in the electrical part.</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <button class="collapsible">Scientific Initiation, analysis of orbital dynamics of extrasolar systems, UFRJ. <span class="small text-muted">2016 - 2018</span></button>
-                                    <div class="collap-content">
-                                        <p>- Analysis of orbital dynamics and simulations of asteroids in Kepler extrasolar systems in order to study the possibility of the existence of water on extrasolar planets.</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </p>
-                    </section>
+                <hr />
 
-                    <section id="projetos_individuais">
-                        <h4>Individual Projects</h4>
-                        <p>
-                            <ul class="no-bullets">
-                                <li>Web application for monitoring and identifying patterns in crypto assets. <span class="small text-muted">2020</span></li>
-                                <li>Application of Tangle technology (similar to Blockchain) for information transfer and payments. <span class="small text-muted">2018</span></li>
-                                <li>Creation of e-commerce website (frontend and backend). <span class="small text-muted">2018</span></li>
-                                <li>Cryptocurrency website creation (frontend: HTML5, CSS5, Javascript and backend: PHP, Mysql). <span class="small text-muted">2018</span></li>
-                                <li>Development of the system that directs a solar panel to a light source with Arduino. <span class="small text-muted">2017</span></li>
-                                <li>Development of two games for android platform (Java/LibGDX). <span class="small text-muted">2016</span></li>
-                            </ul>
-                        </p>
-                    </section>
+                <section id="resumo">
+                    <h4>Summary</h4>
+                    <p class="ml-5">
+                        I'm fascinated by computing. I have about 8 years of experience in the area ranging from game development,
+                        web systems, data engineering and data science.
+                        My specialty is <strong>full-stack web development (NodeJS/Python; Vue/React/Svelte)</strong> and cloud services (<strong>AWS</strong>).
+                        I have experience leading development teams and mentoring new developers.
+                    </p>
+                </section>
 
-                    <section id="cursos">
-                        <h4>Courses</h4>
-                        <p>
-                            <ul class="no-bullets">
-                                <li>Building Scalable APIs with the AWS API Gateway (1h55m), Pluralsight. <span class="small text-muted">2020</span></li>
-                                <li>Docker for Web Developers (5h38m), Pluralsight. <span class="small text-muted">2020</span></li>
-                                <li>Using the Serverless Framework with Node.js on AWS (1h38m), Pluralsight. <span class="small text-muted">2020</span></li>
-                                <li>AWS Serverless Computing: The Big Picture (1h), Pluralsight. <span class="small text-muted">2020</span></li>
-                                <li>AWS Developer: An Introduction to AWS Lambda (4h), Pluralsight. <span class="small text-muted">2020</span></li>
-                                <li>Curso React.js Ninja - React Complete (91h), Udemy. <span class="small text-muted">2019</span></li>
-                                <li>Complete Course of Web Development (34h30m), Udemy. <span class="small text-muted">2018</span></li>
-                                <li>Git Started with Github (1h), Udemy. <span class="small text-muted">2018</span></li>
-                                <li>Machine Learning and Data Science with Python (16h30m), Udemy. <span class="small text-muted">2017</span></li>
-                                <li>Android Start (8h), Softblue. <span class="small text-muted">2017</span></li>
-                                <li>SQL Complete (20h), Softblue. <span class="small text-muted">2017</span></li>
-                                <li>Java Academy 2016 Pocket Edition (4h), Softblue. <span class="small text-muted">2016</span></li>
-                                <li>Java Academy 2016 (12h), Softblue. <span class="small text-muted">2016</span></li>
-                                <li>Android Development Course (40h), Udemy. <span class="small text-muted">2016</span></li>
-                                <li>Android Course (96h), Brava Cursos. <span class="small text-muted">2015</span></li>
-                                <li>Complete English course, Wizard. <span class="small text-muted">2012</span></li>
-                            </ul>
-                        </p>
-                    </section>
+                <section id="formacao_academica">
+                    <h4>Academic Background</h4>
+                    <p>
+                        <ul class="no-bullets">
+                            <li>Bachelor in Computer Science, Federal University of Rio de Janeiro (UFRJ) <span class="small text-muted">2019 - 2023</span></li>
+                            <li>Bachelor of Physics, UFRJ. (6 effective periods, course switch) <span class="small text-muted">2015 - 2018</span></li>
+                        </ul>
+                    </p>
+                </section>
 
-                    <section id="idiomas">
-                        <h4>Idioms</h4>
-                        <p>
-                            <ul class="no-bullets">
-                                <li>English fluent</li>
-                                <li>Portuguese native</li>
-                            </ul>
-                        </p>
-                    </section>
-                </div>
+                <section id="experiencia">
+                    <h4>Experience</h4>
+                    <p>
+                        <ul class="no-bullets mb">
+                            <li><span class="highlight">AWS</span> - Lambda, S3, IAM, API Gateway, CloudFormation, Cognito, Amplify, Step Functions, DynamoDB, Timestream, EC2, ECS, CloudWatch, CloudFront, Route 53, Sagemaker, Glue, Athena, SNS, SQS, SES, EKS, Serverless Framework.</li>
+                            <li><span class="highlight">Web Development</span> - Vue, React, Svelte, AWS (Lambda, API Gateway, DynamoDB, S3, Cognito, Amplify, EC2), Flask, NodeJS, NestJS, Express, Laravel, REST APIs, GraphQL, Redis, Typescript, PHP, SQL, NoSQL, Strapi, SASS, TailwindCSS, Eslint, Stylelint, Prettier, Jest.</li>
+                            <li><span class="highlight">Data Engineering</span> - Python (numpy, pandas, boto3), PySpark, ETLs, AWS (Lambda, Kinesis, Firehose, SNS, SQS, S3, Glue, Athena).</li>
+                            <li><span class="highlight">Data Science</span> - Machine Learning (scikit-learn, keras), Computer Vision (yolo, opencv), MLPs, NLPs, LSTMs.</li>
+                            <li><span class="highlight">Devops</span> - Git, CloudFormation, CI/CD (Github Actions, Bitbucket pipeliens, CodeBuild), Docker, Kubernetes (AWS EKS).</li>
+                            <li>SaaS, IaC, TDD, DDD, BDD, microservices and event-driven systems.</li>
+                        </ul>
+                    </p>
+                </section>
+
+                <section id="outras_atividades">
+                    <h4>Activities</h4>
+                    <p>
+                        <ul class="no-bullets">
+                            <li>
+                                <div><span class="highlight">Software Developer at Hashdex</span> <span class="small text-muted">2020 - 2022 (3 years)</span></div>
+                                <div>
+                                    <p>
+                                        I conceived the architecture and developed for years an asset management system for Hashdex. The system contains numerous 
+                                        utilities/automations and is used internally and by partners. It is an ecosystem of microservices (Lambda) on a serverless event-driven 
+                                        architecture (SNS / SQS / DynamoDB). Most of the microservices were written in Python while the user interface was developed in VueJS + TailwindCSS + Quasar. System security is based on multiple factors such as internal network (VPN), oauth authentication (Cognito), authorization (ABAC) and MFAs.
+                                    </p>
+                                    <p>
+                                        I worked on the development of the company's main website (first version). The UI was developed in NuxtJS (Vue SSR) based on designs in Figma. The CMS was developed using the Strapi Framework.
+                                    </p>
+                                    <p>
+                                        I developed the initial structure of Datalake. I Implemented automatic data ingestion routines with Python, AWS Lambda, S3 and Serverless Framework. AWS Glue jobs processed the new files and the data was made available for analysis in AWS Athena via SQL queries.
+                                    </p>
+                                    <p>
+                                        I co-acted in the development of Marketdata, an application for ingestion and availability of data (price, volume, etc.) in real time for assets and indices. Data ingestion was done by Kubernetes pods (AWS EKS) ingesting data from third-party websockets and pushing the data into AWS Kinesis and Firehose, the data was processed and stored in AWS Timestream and Redis for low-latency queries.
+                                    </p>
+                                    <p>
+                                        I developed countless automatic routines that considerably reduced the analysts' work time. Their orchestration was done by AWS Step Functions and AWS Lambda.
+                                    </p>
+                                    <p>
+                                        Most projects were based on serverless architecture, making it possible to build scalable and extremely cheap applications compared to traditional applications.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div><span class="highlight">Software Developer at Wikki Brasil</span> <span class="small text-muted">2019 (6 months)</span></div>
+                                <div>
+                                    <p>
+                                        I performed the maintenance and development of new features in a Desktop application from Petrobras. The legacy application was an oil drilling simulator and was written in Python over 25 years ago.
+                                    </p>
+                                    <p>
+                                        Co-acted in the development of a web application for Petrobras (confidential). The application was developed using Python and React.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div><span class="highlight">Software Developer at STI POLI UFRJ</span> <span class="small text-muted">2019 (1 year)</span></div>
+                                <div>
+                                    <p>
+                                        I developed a web application to control tuition payments for graduate courses at Escola Politécnica UFRJ using Laravel (PHP), the user interface was written with Vue. In this application, it was possible to monitor students in debt, monitor cash flow and generate reports.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div><span class="highlight">Software Developer at Ágil TI</span> <span class="small text-muted">2019 (1 year)</span></div>
+                                <div>
+                                    <p>
+                                        I co-acted on the development of a travel agency web application. The backend was developed with Laravel (PHP) while the user interface was developed with Vue.
+                                    </p>
+                                </div>
+                            </li>
+                            <li>
+                                <div><span class="highlight">Freelancer</span> <span class="small text-muted">2016 - 2018 (3 years)</span></div>
+                                <div>
+                                    <p>
+                                        At the beginning of my career I worked a lot as a freelancer in small jobs and personal projects. Highlights include the development of two 2D games for Android using the LibGDX framework. In addition, I developed a web application that contained information, news and other content about the IOTA cryptocurrency, the application was intended to educate about the magnificent ecosystem of the project.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </p>
+                </section>
+
+                <section id="idiomas">
+                    <h4>Idioms</h4>
+                    <p>
+                        <ul class="no-bullets">
+                            <li>English fluent</li>
+                            <li>Portuguese native</li>
+                        </ul>
+                    </p>
+                </section>
+    
                 <footer>
-                  &copy; Mateus Santos <a href="https://github.com/mvsantos013">https://github.com/mvsantos013</a>
+                    &copy; Mateus Santos <a href="https://github.com/mvsantos013">https://github.com/mvsantos013</a>
                 </footer>
             </div>
         </div>
-
-        <script src="../js/jquery-1.11.0.min.js"></script>
-        <script src="../js/bootstrap.min.js"></script>
-
-        <script>
-            var coll = document.getElementsByClassName("collapsible");
-            var i;
-            
-            for (i = 0; i < coll.length; i++) {
-              coll[i].addEventListener("click", function() {
-                this.classList.toggle("collap-active");
-                var content = this.nextElementSibling;
-                if (content.style.maxHeight){
-                  content.style.maxHeight = null;
-                } else {
-                  content.style.maxHeight = content.scrollHeight + "px";
-                } 
-              });
-            }
-        </script>
     </body>
 </html>
